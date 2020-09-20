@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyABd9v1I6PCdD-3l6ZST9DhY9Prf751TEU",
+    authDomain: "chat-apps-54374.firebaseapp.com",
+    databaseURL: "https://chat-apps-54374.firebaseio.com",
+    projectId: "chat-apps-54374",
+    storageBucket: "chat-apps-54374.appspot.com",
+    messagingSenderId: "525908545808",
+    appId: "1:525908545808:web:d72c8d88ef2dfbee811595"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+  <div class="form">
+    <input type="text" id="message" placeholder="enter message">
+    <button onclick="sendMessage()">submit</button>
+  </div>
+
+   <ul id="messages"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
